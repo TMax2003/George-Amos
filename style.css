@@ -16,7 +16,7 @@ ul {
   
 a {
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 
 .nav {
@@ -43,12 +43,12 @@ a {
   
 .nav-list {
       margin: 0 1rem;
-    }
+    }   
 }
   
 .nav-list a {
     display: block;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     padding: 1rem;
 }
   
@@ -56,9 +56,10 @@ a {
     background: var(--main-blue);
 }
   
+  
 
 body {
-    background: url(https://i.postimg.cc/YS4YrVFz/andrej-lisakov-g3z-Cg-Ui-Ptg-unsplash.jpg);
+    background: url(https://i.postimg.cc/Dzz84F6Z/olia-gozha-J4k-K8b9-Fgj8-unsplash.jpg);
     background-size: cover;
     background-position: center;
     font-family: 'Segoe UI', 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -73,15 +74,16 @@ body {
 }
 
 h1 {
-    color: white;
+    color: #2d2d2d;
     font-size: 4.5rem;
     font-weight: 700;
+    padding-top: 3rem;
     letter-spacing: 1px;
     margin-bottom: 0rem;
 }
 
 h2 {
-    color: white;
+    color: #2d2d2d;
     font-size: 3rem;
     font-weight: 400;
 }
@@ -93,7 +95,7 @@ h2 {
 
 p {
     font-size: 2rem;
-    color: white;
+    color: #2d2d2d;
     line-height: 3rem;
     margin-bottom: 5rem;
 }
@@ -171,25 +173,74 @@ p {
     border-radius: 2px;
   }
   
-  .btn-show-all {
+.btn-show-all {
     font-size: 2rem;
     background: var(--main-gray);
     transition: background 0.3s ease-out;
   }
   
-  .btn-show-all:hover {
+.btn-show-all:hover {
     background: var(--main-red);
   }
   
-  .btn-show-all:hover > i {
+.btn-show-all:hover > i {
     transform: translateX(2px);
   }
   
-  .btn-show-all > i {
+.btn-show-all > i {
     margin-left: 10px;
     transform: translateX(0);
     transition: transform 0.3s ease-out;
   }
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  font-size: 15px;
+  text-decoration: none;
+  color: #003585;
+  padding: 10px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  position: relative; }
+
+.btn:hover {
+  transform: translateX(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+
+.btn:active {
+  transform: translateX(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.btn-white {
+  background-color: #003585;
+  color: #fff; }
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s; }
+
+.btn-white:after {
+  background-color: #003585; }
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0; }
+
+.btn-animated {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards; }
+
+
 
   
   /* Contact section */
@@ -203,8 +254,9 @@ p {
     width: 100%;
     height: 80vh;
     padding: 0 2rem;
-    background: var(--main-gray);
+    background: var(--main-blue);
   }
+
   
   .contact-section-header > h2 {
     font-size: 4rem;
@@ -220,6 +272,7 @@ p {
     font-style: italic;
   }
   
+  
   .contact-links {
     display: flex;
     justify-content: center;
@@ -231,10 +284,11 @@ p {
   
   .contact-details {
     font-size: 2.4rem;
-    text-shadow: 2px 2px 1px #1f1f1f;
     transition: transform 0.3s ease-out;
   }
   
   .contact-details:hover {
     transform: translateY(8px);
   }
+
+  
