@@ -16,7 +16,7 @@ ul {
   
 a {
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 
 .nav {
@@ -43,18 +43,19 @@ a {
   
 .nav-list {
       margin: 0 1rem;
-    }
+    }   
 }
   
 .nav-list a {
     display: block;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     padding: 1rem;
 }
   
 .nav-list a:hover {
     background: var(--main-blue);
 }
+  
   
 
 body {
@@ -197,6 +198,10 @@ p {
   text-transform: uppercase;
   font-size: 15px;
   text-decoration: none;
+<<<<<<< Updated upstream
+=======
+  color: #003585;
+>>>>>>> Stashed changes
   padding: 10px 40px;
   display: inline-block;
   border-radius: 100px;
@@ -254,6 +259,7 @@ p {
     padding: 0 2rem;
     background: var(--main-blue);
   }
+
   
   .contact-section-header > h2 {
     font-size: 4rem;
@@ -269,6 +275,7 @@ p {
     font-style: italic;
   }
   
+  
   .contact-links {
     display: flex;
     justify-content: center;
@@ -280,7 +287,10 @@ p {
   
   .contact-details {
     font-size: 2.4rem;
+<<<<<<< Updated upstream
     text-shadow: 2px 2px 1px #003585;
+=======
+>>>>>>> Stashed changes
     transition: transform 0.3s ease-out;
   }
   
