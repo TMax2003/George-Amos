@@ -198,7 +198,7 @@ p {
   text-transform: uppercase;
   font-size: 15px;
   text-decoration: none;
-  color: #003585;
+  color: #fff;
   padding: 10px 40px;
   display: inline-block;
   border-radius: 100px;
@@ -271,6 +271,79 @@ p {
   .contact-section-header > p {
     font-style: italic;
   }
+
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+  }
+  
+.button-show-all {
+    font-size: 2rem;
+    background: var(--main-gray);
+    transition: background 0.3s ease-out;
+  }
+  
+.button-show-all:hover {
+    background: var(--main-red);
+  }
+  
+.button-show-all:hover > i {
+    transform: translateX(2px);
+  }
+  
+.button-show-all > i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+  }
+
+.button:link,
+.button:visited {
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: none;
+    color: #003585;
+    padding: 10px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative; }
+
+    .button:hover {
+      transform: translateX(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+    
+    .button:active {
+      transform: translateX(-1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+    
+    .button-white {
+      background-color: #003585;
+      color: #fff; }
+    
+    .button::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .4s; }
+    
+    .button-white:after {
+      background-color: #003585; }
+    
+    .button:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+    
+    .button-animated {
+      animation: moveInBottom .5s ease-out .75s;
+      animation-fill-mode: backwards; }    
   
   
   .contact-links {
